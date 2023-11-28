@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+
+    <div id="items">
+        <ul>
+            <li><a class="add-to-cart" href="#" data-name="Apple" data-price="1.22">Apple $1.22</a></li>
+            <li><a class="add-to-cart" href="#" data-name="Banana" data-price="1.33">Banana $1.33</a></li>
+            <li><a class="add-to-cart" href="#" data-name="Shoe" data-price="22.33">Show $22.33</a></li>
+            <li><a class="add-to-cart" href="#" data-name="Frisbee" data-price="5.22">Frisbee $5.22</a></li>
+        </ul>
+        <button id="clear-cart"> Clear Cart</button>
+    </div>
+
+    <div id="cart">
+        <ul id="show-cart">
+            <li>??????</li>
+        </ul>
+        <div class="result">
+        <div>You have <span id="count-cart">X</span> items in your cart</div>
+        <div class="total">Total Cart: $<span id="total-cart"></span></div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
